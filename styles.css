@@ -349,14 +349,14 @@ body {
 /* iPhone 13 and similar smaller screens */
 @media (max-width: 390px) {
   .avatar {
-    width: 100px;
-    height: 180px;
+    width: 85px;
+    height: 160px;
   }
   
   .avatars {
     gap: 25px;
     margin-left: 12px;
-    margin-top: -35px;
+    margin-top: -80px;
   }
 
   .speech-bubble {
@@ -366,11 +366,11 @@ body {
 
   /* Speech bubble positioning - moved higher up */
   .speech-bubble.speaker-him {
-    top: 22%;
+    top: 17%;
   }
 
   .speech-bubble.speaker-her {
-    top: 62%;
+    top: 58%;
   }
   
   #message-text {
@@ -378,7 +378,7 @@ body {
   }
 
   .actions {
-    bottom: 40px;
+    bottom: 135px;
     gap: 12px;
   }
   
@@ -417,7 +417,7 @@ body {
   .avatar.center-her {
     left: 58%;
     top: 35%;
-    width: 95px;
-    height: 180px;
+    width: 80px;
+    height: 170px;
   }
 }
