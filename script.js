@@ -1,7 +1,7 @@
 // Messages array - each message has speaker and text
 const messages = [
   { speaker: 'him', text: 'I have something to tell you' },
-  { speaker: 'him', text: 'I really like you and talking to you so I have been wanting to ask you this question' },
+  { speaker: 'him', text: 'I really like you and I\'ve been wanting to ask you something' },
   { speaker: 'him', text: 'Can I be your boyfriend? 😊' }
 ];
 
