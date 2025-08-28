@@ -288,6 +288,7 @@ body {
   
   .avatars {
     gap: 30px;
+    margin-left: 15px;
   }
   
   .speech-bubble {
@@ -302,35 +303,120 @@ body {
   .btn {
     padding: 15px 25px;
     font-size: 14px;
-    min-width: 140px;
+    min-width: 120px;
   }
   
   .actions {
     gap: 15px;
-    bottom: 80px;
+    bottom: 60px;
   }
   
   .flower {
-    left: 130px;
-    top: 35%;
+    left: 100px;
+    top: 40%;
   }
   
   .rose-img {
-    width: 40px;
-    height: 70px;
+    width: 35px;
+    height: 60px;
   }
 
-  /* Mobile center animation */
+  .instruction {
+    bottom: 120px;
+    font-size: 12px;
+  }
+
+  .yay-message {
+    bottom: 180px;
+  }
+
+  /* Mobile center animation - better alignment */
+  .avatar.center-him {
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .avatar.center-her {
+    left: 55%;
+    top: 50%;
+    width: 100px;
+    height: 180px;
+    transform: translateY(-50%) scale(1.0) scaleX(-1);
+  }
+}
+
+/* iPhone 13 and similar smaller screens */
+@media (max-width: 390px) {
+  .avatar {
+    width: 100px;
+    height: 180px;
+  }
+  
+  .avatars {
+    gap: 25px;
+    margin-left: 12px;
+  }
+
+  .speech-bubble {
+    max-width: 180px;
+    padding: 15px;
+  }
+
+  /* Speech bubble positioning - moved higher up */
+  .speech-bubble.speaker-him {
+    top: 25%;
+  }
+
+  .speech-bubble.speaker-her {
+    top: 65%;
+  }
+  
+  #message-text {
+    font-size: 12px;
+  }
+
+  .actions {
+    bottom: 40px;
+    gap: 12px;
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 13px;
+    min-width: 110px;
+  }
+  
+  .flower {
+    left: 110px;
+    top: 33%;
+  }
+  
+  .rose-img {
+    width: 30px;
+    height: 50px;
+  }
+
+  .instruction {
+    bottom: 70px;
+    font-size: 11px;
+  }
+
+  .yay-message {
+    bottom: 130px;
+    font-size: 20px;
+  }
+
+  /* Better avatar alignment for iPhone 13 */
   .avatar.center-him {
     left: 20%;
-    transform: translateY(-50%) scale(1.1);
-    }
+    top: 48%;
+  }
 
-    .avatar.center-her {
-    left: 55%;
-    top: 40%;
-    width: 110px;
-    height: 200px;
-    transform: translateY(-50%) scale(1.0) scaleX(-1);
-    }
+  .avatar.center-her {
+    left: 58%;
+    top: 35%;
+    width: 95px;
+    height: 180px;
+  }
 }
