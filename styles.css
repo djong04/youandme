@@ -7,7 +7,7 @@
 body {
   background: #000;
   color: white;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Bradley Hand', 'Brush Script MT', fantasy, sans-serif;
   height: 100vh;
   overflow: hidden;
   touch-action: manipulation;
