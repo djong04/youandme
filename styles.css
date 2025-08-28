@@ -295,6 +295,15 @@ body {
     max-width: 200px;
     padding: 15px;
   }
+
+  /* Speech bubble positioning - moved higher up */
+  .speech-bubble.speaker-him {
+    top: 30%;
+  }
+
+  .speech-bubble.speaker-her {
+    top: 70%;
+  }
   
   #message-text {
     font-size: 14px;
@@ -312,8 +321,8 @@ body {
   }
   
   .flower {
-    left: 100px;
-    top: 40%;
+    left: 130px;
+    top: 36%;
   }
   
   .rose-img {
