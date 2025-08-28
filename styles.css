@@ -366,11 +366,11 @@ body {
 
   /* Speech bubble positioning - moved higher up */
   .speech-bubble.speaker-him {
-    top: 17%;
+    top: 19%;
   }
 
   .speech-bubble.speaker-her {
-    top: 58%;
+    top: 60%;
   }
   
   #message-text {
@@ -389,8 +389,8 @@ body {
   }
   
   .flower {
-    left: 110px;
-    top: 33%;
+    left: 100px;
+    top: 31%;
   }
   
   .rose-img {
