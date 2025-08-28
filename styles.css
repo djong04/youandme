@@ -356,6 +356,7 @@ body {
   .avatars {
     gap: 25px;
     margin-left: 12px;
+    margin-top: -35px;
   }
 
   .speech-bubble {
@@ -365,11 +366,11 @@ body {
 
   /* Speech bubble positioning - moved higher up */
   .speech-bubble.speaker-him {
-    top: 25%;
+    top: 22%;
   }
 
   .speech-bubble.speaker-her {
-    top: 65%;
+    top: 62%;
   }
   
   #message-text {
