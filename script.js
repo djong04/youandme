@@ -1,7 +1,7 @@
 // Messages array - each message has speaker and text
 const messages = [
   { speaker: 'him', text: 'I have something to tell you' },
-  { speaker: 'him', text: 'I really enjoy talking to you and I have been wanting to ask you this question' },
+  { speaker: 'him', text: 'I really like you and talking to you so I have been wanting to ask you this question' },
   { speaker: 'him', text: 'Can I be your boyfriend? 😊' }
 ];
 
@@ -98,7 +98,7 @@ function typeMessage(text, callback) {
       isTyping = false;
       if (callback) callback();
     }
-  }, 32);
+  }, 30);
 }
 
 function setupButtons() {
