@@ -20,8 +20,50 @@ const confettiCanvas = document.getElementById('confetti');
 const yayMessage = document.getElementById('yay-message');
 const instruction = document.getElementById('instruction');
 
+// Reset everything to initial state
+function resetPage() {
+  // Reset variables
+  currentMessageIndex = 0;
+  isTyping = false;
+  hasStarted = false;
+  
+  // Clear message text
+  messageText.textContent = '';
+  
+  // Reset avatar classes and styles
+  avatarHim.classList.remove('speaking', 'center-him');
+  avatarHer.classList.remove('speaking', 'center-her');
+  avatarHer.style.transition = '';
+  avatarHer.style.transform = '';
+  
+  // Reset speech bubble
+  speechBubble.classList.remove('show', 'speaker-him', 'speaker-her');
+  speechBubble.style.opacity = '';
+  
+  // Reset flower/rose
+  flower.classList.remove('show');
+  flower.style.opacity = '';
+  
+  // Reset actions/buttons
+  actions.classList.remove('show');
+  actions.style.display = '';
+  
+  // Reset messages
+  yayMessage.classList.remove('show');
+  
+  // Reset instruction
+  instruction.classList.remove('show');
+  
+  // Clear canvas
+  const ctx = confettiCanvas.getContext('2d');
+  ctx.clearRect(0, 0, confettiCanvas.width, confettiCanvas.height);
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
+  // Always reset everything first
+  resetPage();
+  
   document.body.addEventListener('click', handleTap);
   setupButtons();
   instruction.classList.add('show');
