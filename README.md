@@ -1,4 +1,4 @@
-Confession static site
+HTML static site 
 
 This is a simple, mobile-focused static page that can be deployed to GitHub Pages. 
 
